@@ -20,3 +20,9 @@ matching via regular expressions.
 `string !~ regex` - checks if `string` value does not match regex
 
 `symbol !~ regex` - checks if `symbol` value does not match regex
+
+## regexp_replace (replace)
+
+`string regexp_replace regex` -  replaces a sequence of characters in a string with another set of characters using regular expression pattern matching
+
+`symbol regexp_replace regex` - replaces `symbol` value to regex
