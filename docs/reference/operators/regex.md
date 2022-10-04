@@ -21,8 +21,29 @@ matching via regular expressions.
 
 `symbol !~ regex` - checks if `symbol` value does not match regex
 
+---
+title: Regex functions
+sidebar_label: Regex
+description: Regex functions reference documentation.
+---
+
+Regex functions will allow us to replace a sequence of characters in a string with another set of characters using regular expression pattern matching.
+
 ## regexp_replace (replace)
 
-`string regexp_replace regex` -  replaces a sequence of characters in a string with another set of characters using regular expression pattern matching
+`string regexp_replace regex` - The regexp_replace function provides substitution of new text for substrings that match POSIX regular expression patterns. 
 
-`symbol regexp_replace regex` - replaces `symbol` value to regex
+**Arguments:**
+
+- regexp_replace ( string text, pattern text, replacement text [, flags text ] ) 
+
+**Return value:**
+
+The source string is returned unchanged if there is no match to the pattern. If there is a match, the source string is returned with the replacement string substituted for the matching substring.
+
+**Examples:**
+
+```questdb-sql title="Example description -  regexp_replace"
+SELECT REGEXP_REPLACE ('MYSQL is a great database', '^(\S*)', 'QuestDB')
+FROM dual;
+```
