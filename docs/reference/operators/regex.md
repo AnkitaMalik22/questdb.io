@@ -25,13 +25,13 @@ matching via regular expressions.
 
 ## regexp_replace
 
-`regexp_replace ( value1, text , value2 )` - The regexp_replace function provides substitution of new text for substrings that match regular expression patterns. 
+`regexp_replace ( value1, text , value2 )` - provides substitution of new text for substrings that match regular expression patterns. 
 
 **Arguments:**
 
-- `value1` is string value.
+- `value1` is any `string` value.
 - `text` is  any regular expression pattern.
-- `value2` is string value.
+- `value2` is any `string` value.
 
 **Return value:**
 
