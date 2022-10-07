@@ -25,7 +25,7 @@ matching via regular expressions.
 
 ## regexp_replace
 
-`regexp_replace ( value1, text , value2 )` - provides substitution of new text for substrings that match regular expression patterns. 
+`regexp_replace ( value1, text , value2 )` - provides substitution of new text for substrings that match regular expression patterns.We use Java regex syntax here.
 
 **Arguments:**
 
@@ -41,4 +41,8 @@ The source string is returned unchanged if there is no match to the pattern. If 
 
 ```questdb-sql title="Example description -  regexp_replace"
 SELECT REGEXP_REPLACE ('MYSQL is a great database', '^(\S*)', 'QuestDB');
+```
+
+```
+QuestDB is a great database
 ```
